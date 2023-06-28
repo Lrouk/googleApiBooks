@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/googleApiBooks/static/css/main.9be3689e.css",
-    "main.js": "/googleApiBooks/static/js/main.5236cba5.js",
+    "main.css": "/googleApiBooks/static/css/main.52f0d280.css",
+    "main.js": "/googleApiBooks/static/js/main.b98b0a54.js",
     "index.html": "/googleApiBooks/index.html",
-    "main.9be3689e.css.map": "/googleApiBooks/static/css/main.9be3689e.css.map",
-    "main.5236cba5.js.map": "/googleApiBooks/static/js/main.5236cba5.js.map"
+    "main.52f0d280.css.map": "/googleApiBooks/static/css/main.52f0d280.css.map",
+    "main.b98b0a54.js.map": "/googleApiBooks/static/js/main.b98b0a54.js.map"
   },
   "entrypoints": [
-    "static/css/main.9be3689e.css",
-    "static/js/main.5236cba5.js"
+    "static/css/main.52f0d280.css",
+    "static/js/main.b98b0a54.js"
   ]
 }
