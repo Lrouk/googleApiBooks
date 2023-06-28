@@ -1,38 +1,119 @@
-.App {
+/* App.css */
+.app__Search {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.google-text {
+  color: #4285f4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.books-text {
+  color: #ea4335;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-text {
+  color: #fbbc05;
+}
+
+.app__search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchbar {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.searchbar:hover {
+  border-color: black; /* change to your desired border color */
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 35px;
+  border: none;
+  background-color: #3E82F0;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.app__book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.book-item {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.book-cover {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.book-title {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.book-title:hover {
+  color: #4285f4;
+}
+
+@media screen and (max-width: 450px) {
+  .app__search-container {
+    flex-direction: column;
+    align-items: stretch;
   }
-  to {
-    transform: rotate(360deg);
+
+  .searchbar {
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .app__book-list{
+    grid-template-columns: 1fr;
+  }
+
+  .book-item {
+    padding: 5px;
+  }
+
+  .book-cover {
+    width: 100px;
+  }
+
+  .book-title {
+    font-size: 14px;
   }
 }
